@@ -1,0 +1,58 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.tableHeader {
+  background-color: #f2f2f2;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.tableRow {
+  border: 1px solid #ddd;
+}
+
+.tableRow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableData {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+}
+
+.companyLogo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.minInvestment {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .tableHeader:nth-child(n+2),
+  .tableData:nth-child(n+2) {
+    display: none;
+  }
+
+  .companyInfo div {
+    font-size: 14px;
+  }
+
+  .companyLogo {
+    width: 40px;
+    height: 40px;
+  }
+}
