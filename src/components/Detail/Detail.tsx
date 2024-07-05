@@ -8,7 +8,7 @@ const IPODetails: React.FC = () => {
   const navigate = useNavigate();
   const ipo = ipoData.find(item => item.id === parseInt(id));
 
-  const isMobile = useMediaQuery('(max-width:600px)'); // Adjust breakpoint as per your design needs
+  const isMobile = useMediaQuery('(max-width:768px)'); // Adjust breakpoint as per your design needs
 
   if (!ipo) {
     return <div>IPO not found</div>;
